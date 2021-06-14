@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="songplay.js"></script>
 </head>
 <body>
     <header>
@@ -37,8 +38,69 @@
         <div class="content">
             <div class="titleAlbum"><h2>Trial Sample </h2></div>
             <div class="albumCard">
-                <div>
-                    <div class="albumPhoto">
+                <div class="albumContainer">
+
+                    <div>
+                        <div class="albumPhoto">
+                            <img src="img/mardial.jpeg" class="alb photoArt">
+                        </div>
+                        <div class="playMusic">
+                            <img src="img/play (1).png" id="iconPlay1">
+                        </div>
+                        <div class="artistName">
+                            <p>
+                                Mamang Kesbor
+                            </p>
+                        </div>
+                        <div class="songName">
+                            <p>
+                                Soto Ayam Bu Karti
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="albumContainer">
+
+                    <div>
+                        <div class="albumPhoto">
+                            <img src="img/salpriadi.jpeg" class="alb photoArt">
+                        </div>
+                        <div class="playMusic">
+                            <img src="img/play (1).png" id="iconPlay2">
+                        </div>
+                        <div class="artistName">
+                            <p>
+                                Sal Priadi
+                            </p>
+                        </div>
+                        <div class="songName">
+                            <p>
+                                Di Timur
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="albumContainer">
+
+                    <div>
+                        <div class="albumPhoto">
+                            <img src="img/kuntoaji.jpeg" class="alb photoArt">
+                        </div>
+                        <div class="playMusic">
+                            <img src="img/play (1).png" id="iconPlay3">
+                        </div>
+                        <div class="artistName">
+                            <p>
+                                Kunto Aji
+                            </p>
+                        </div>
+                        <div class="songName">
+                            <p>
+                                Sulung
+                            </p>
+                        </div>
                         
                     </div>
                 </div>
@@ -46,5 +108,54 @@
 
         </div>
     </div>
+    <audio id="kesborSong">
+        <source src="music/mamang kesbor soto ayam bu karti.mp3" type="audio/mp3" >
+    </audio>
+    <audio id="salSong">
+        <source src="music/sal priadi ditimur.mp3" type="audio/mp3" >
+    </audio>
+    <audio id="KuntoSong">
+        <source src="music/kunto aji sulung.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        var song1 = document.getElementById("kesborSong");
+var icon1 = document.getElementById("iconPlay1");
+
+icon1.onclick = function(){
+    if(song1.paused){
+        song1.play();
+        icon1.src = "img/pause (1).png"
+    }else{
+        song1.pause();
+        icon1.src = "img/play (1).png"
+    }
+}
+var song2 = document.getElementById("salSong");
+var icon2 = document.getElementById("iconPlay2");
+
+icon1.onclick = function(){
+    if(son2.paused){
+        song2.play();
+        icon2.src = "img/pause (1).png"
+    }else{
+        song2.pause();
+        icon2.src = "img/play (1).png"
+    }
+}
+var song3 = document.getElementById("KuntoSong");
+var icon3 = document.getElementById("iconPlay3");
+
+icon1.onclick = function(){
+    if(song3.paused){
+        song3.play();
+        icon3.src = "img/pause (1).png"
+    }else{
+        song3.pause();
+        icon3.src = "img/play (1).png"
+    }
+}
+
+    </script>
 </body>
 </html>

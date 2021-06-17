@@ -10,9 +10,7 @@ function validateRegist(){
     let emailValAt = myEmail.substring(atEmail,myEmail.length+1)
     var valid = false;
     var x = document.formRegist.gender;
-
     var region = document.formRegist.region.value;
-
     var music = document.formRegist.music.value;
 
 

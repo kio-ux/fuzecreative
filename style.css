@@ -394,3 +394,27 @@ height: auto;
   font-size: 10px;
   margin-bottom: 5px;
 }
+.Desc{
+  text-align: center;
+  padding: 10px;
+  margin: 7px;
+}
+.topWrapperOffer{
+  padding: 180px 0 100px 0;
+  height: 250px;
+  background-size: cover;
+  color:white;
+  text-align: center;
+  background-image: url(https://images.pexels.com/photos/1389429/pexels-photo-1389429.jpeg?cs=srgb&dl=pexels-elviss-railijs-bit%C4%81ns-1389429.jpg&fm=jpg);
+}
+.topWrapperOffer h1{
+  opacity:1 ;
+  font-size: 35px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+.Offer{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}

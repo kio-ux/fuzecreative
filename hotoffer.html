@@ -5,10 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <div>
-        
+    <header>
+        <div class="container">
+            <div class="headerLeft">
+                <div class="headerLogo"><a href="index.html">Fuze</a></div>
+            </div>
+            <div class="headerRight">
+                <ul>
+                    <li><a href="hotoffer.html">Hot Offer</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="album.html">Album</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="RegistOffer">
+        <div class="formContainer">
+            <form action="" method="POST" onsubmit="return validateRegist()" name="formRegist">
+                <input type="text" id="fullName" placeholder="Nama Lengkap" name="name">
+                <input type="text" id="email" placeholder="Email" name="email">
+                <input type="text" name="username" id="username" placeholder="Username">
+                <textarea name="address" id="address" cols="20" rows="10" placeholder="Alamat"></textarea> 
+                <div class="radioButton">
+                    <input type="radio" name="gender" value="male" id="radioBtn"> Male
+                    <input type="radio" name="gender" value="female" id="radioBtn"> Female
+                    
+                </div>
+                <div class="dropdownRegion">
+                     <label for="region">Region:</label>
+                     <select id="region" name="region" class="dropdownControl">
+
+                        <option value="Region">Region</option>
+                         <option value="Aceh">Aceh</option>
+                         <option value="Bali">Bali</option>
+                         <option value="Banten">Banten</option>
+                         <option value="Bengkulu">Bengkulu</option>
+                         <option value="Daerah Istimewa Yogyakarta">Daerah Istimewa Jogjakarta</option>
+                         <option value="DKI Jakarta">DKI Jakarta</option>
+                         <option value="Gorontalo">Gorontalo</option>
+                         <option value="Jambi">Jambi</option>
+                         <option value="Jawa Barat">Jawa Barat</option>
+                         <option value="Jawa Tengah">Jawa Tengah</option>
+                         <option value="Jawa Timur">Jawa Timur</option>
+                         <option value="Kalimantan Barat">Kalimantan Barat</option>
+                         <option value="Kalimantan Selatan">Kalimantan Selatan</option>
+                         <option value="Kalimantan Tengah">Kalimantan Tengah</option>
+
+                    </select>
+                </div>
+                <div class="dropdownMusic">
+                    <label for="music">Music:</label>
+                     <select id="music" name="music" class="dropdownControl">
+
+                        <option value="Kategori Musik"> Kategori Musik</option>
+                         <option value="Jazz">Jazz</option>
+                         <option value="Acoustic">Acoustic</option>
+                         <option value="Pop">Pop</option>
+                         <option value="Rock">Rock</option>
+                         <option value="Blues">Blues</option>
+                         <option value="Country">Country</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="fileUpload">Upload File</label>
+                    <input type="file" id="file" name="fileUp">
+                </div>
+                <p id="lblError"> </p>
+                <div class="buttonSubmit">
+
+                    <button id="buttonSubmitRegister">
+                    Submit
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>
